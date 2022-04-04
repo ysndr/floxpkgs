@@ -1,4 +1,5 @@
 { buildPythonPackage
+, termcolor
 }:
 
 
@@ -14,7 +15,7 @@ buildPythonPackage {
   # The propagated equivalent of buildInputs. Note that python modules
   # must always be listed in this section on account of the way that the
   # python module support works in Nix.
-  propagatedBuildInputs = [ ];
+  propagatedBuildInputs = [ termcolor ];
 
   # See https://nixos.org/manual/nixpkgs/stable/#ssec-stdenv-dependencies for
   # more information on the various ways of specifying dependencies with Nix.
